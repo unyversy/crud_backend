@@ -45,16 +45,15 @@ O, si tienes Maven instalado globalmente:
 bash
 Copy code
 mvn spring-boot:run
-La API estará disponible en http://localhost:8080. Puedes acceder a la documentación de la API en http://localhost:8080/swagger-ui.html (si has habilitado Swagger).
+La API estará disponible en http://localhost:8080.
 
 Uso de la API
 La API proporciona los siguientes endpoints:
 
-POST /estudiantes: Crea un nuevo estudiante.
-GET /estudiantes: Obtiene la lista de todos los estudiantes.
-GET /estudiantes/{id}: Obtiene los detalles de un estudiante por ID.
-PUT /estudiantes/{id}: Actualiza los datos de un estudiante por ID.
-DELETE /estudiantes/{id}: Elimina un estudiante por ID.
+POST /nuevo: Crea un nuevo estudiante.
+GET /mostrar: Obtiene la lista de todos los estudiantes.
+POST /update: Actualiza los datos de un estudiante por ID.
+DELETE /{id}: Elimina un estudiante por ID.
 Asegúrate de utilizar un cliente HTTP (por ejemplo, Postman) para probar los endpoints de la API.
 
 Pruebas Unitarias
